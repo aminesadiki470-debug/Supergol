@@ -1,0 +1,32 @@
+{
+ "name": "Super Gol",
+ "short_name": "Super Gol",
+ "description": "Juego de fútbol Super Gol para jugar desde el móvil con tus amigos.",
+ "start_url": "./index.html",
+ "scope": "./",
+ "display": "fullscreen",
+ "orientation": "landscape",
+ "background_color": "#050a18",
+ "theme_color": "#050a18",
+ "lang": "es",
+ "icons": [
+  {
+   "src": "icon-sg-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon-sg-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon-sg-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}
