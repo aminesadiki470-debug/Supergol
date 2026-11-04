@@ -1,15 +1,29 @@
 {
+  "id": "/super-gol-pij4wj",
   "name": "Super Gol",
   "short_name": "Super Gol",
-  "description": "Super Gol: fútbol con coches",
-  "start_url": "./index.html",
+  "description": "Fútbol con coches. Juega contra bots, con amigos y en torneos.",
+  "start_url": "./",
   "scope": "./",
   "display": "fullscreen",
+  "display_override": [
+    "fullscreen",
+    "standalone"
+  ],
   "orientation": "landscape",
   "background_color": "#050a18",
   "theme_color": "#050a18",
+  "lang": "es",
+  "categories": [
+    "games",
+    "sports"
+  ],
   "icons": [
-    { "src": "icono-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "icono-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+    {
+      "src": "supergol.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
   ]
 }
