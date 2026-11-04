@@ -1,32 +1,15 @@
 {
- "name": "Ultimate Football 27",
- "short_name": "UF27",
- "description": "Juego de fútbol para jugar desde el móvil: partidos rápidos, carrera de jugador y más.",
- "start_url": "./ultimate_football_27.html",
- "scope": "./",
- "display": "fullscreen",
- "orientation": "landscape",
- "background_color": "#0b1a3a",
- "theme_color": "#0b1a3a",
- "lang": "es",
- "icons": [
-  {
-   "src": "icon-192.png",
-   "sizes": "192x192",
-   "type": "image/png",
-   "purpose": "any"
-  },
-  {
-   "src": "icon-512.png",
-   "sizes": "512x512",
-   "type": "image/png",
-   "purpose": "any"
-  },
-  {
-   "src": "icon-512.png",
-   "sizes": "512x512",
-   "type": "image/png",
-   "purpose": "maskable"
-  }
- ]
+  "name": "Super Gol",
+  "short_name": "Super Gol",
+  "description": "Super Gol: fútbol con coches",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#050a18",
+  "theme_color": "#050a18",
+  "icons": [
+    { "src": "icono-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icono-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
 }
