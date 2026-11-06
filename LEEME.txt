@@ -1,0 +1,41 @@
+ULTIMATE FOOTBALL 27 - PARA PUBLICAR
+====================================
+
+ARCHIVOS (súbelos TODOS juntos a la misma carpeta, sin cambiar los nombres):
+  index.html              el juego
+  manifest.json           datos de la app (nombre, iconos, pantalla completa horizontal)
+  sw.js                   service worker (funciona sin conexión y se instala como app)
+  menu.jpg                la foto del menú
+  icon-192.png            icono
+  icon-512.png            icono grande
+  icon-maskable-512.png   icono adaptable de Android
+  apple-touch-icon.png    icono de iPhone
+
+DÓNDE PUBLICARLO (gratis, necesita HTTPS):
+  - Netlify: entra en app.netlify.com/drop y arrastra la carpeta.
+  - GitHub Pages / Cloudflare Pages / Vercel: sube los archivos a un repositorio.
+  Con HTTP normal el juego abre, pero NO se instala como app.
+
+INSTALARLO EN EL MÓVIL:
+  Android (Chrome): menú ⋮ > "Instalar aplicación".
+  iPhone (Safari): Compartir > "Añadir a pantalla de inicio".
+
+CUANDO SUBAS CAMBIOS:
+  Abre sw.js y cambia  const VERSION = 'uf27-v2';  por 'uf27-v3', 'uf27-v4'...
+  Así los jugadores reciben la versión nueva.
+
+TEAM YOUR FRIEND (ya no pide iniciar sesión)
+--------------------------------------------
+  Entra directo, sin cuenta.
+  - Por defecto es MODO LOCAL: los amigos se unen desde el mismo dispositivo/navegador.
+  - Para jugar ONLINE (cada amigo desde su móvil) hace falta una base de datos gratis:
+      1. Entra en console.firebase.google.com y crea un proyecto.
+      2. Menú "Realtime Database" > Crear base de datos > modo de prueba.
+      3. En la pestaña "Reglas" pon:
+           { "rules": { "uf27docs": { ".read": true, ".write": true } } }
+         y pulsa Publicar.
+      4. Copia la URL de la base de datos (algo como https://tu-proyecto-default-rtdb.firebaseio.com).
+      5. Abre index.html, busca  window.UF27_DB_URL=""  (está arriba del todo) y pon tu URL entre las comillas.
+      6. Sube index.html otra vez (y sube la VERSION de sw.js).
+  Aviso: esas reglas dejan la base de datos abierta a cualquiera que tenga la URL.
+  Para un juego de amigos sirve; si el juego se hace muy popular, habría que protegerla.
